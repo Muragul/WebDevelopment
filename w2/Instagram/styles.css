@@ -1,0 +1,95 @@
+body{
+    padding-top: 3%;
+    padding-left: 16%;
+    padding-right: 20%;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 60%;
+    background-image: url(phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 20px 10px;
+    border: 1px #e6e6e6 solid;
+    border-radius: 4px;
+    align-content: center;
+}
+.top #img0{
+    margin-left: 20%;
+    width: 60%;
+}
+h3{
+    font-size: 16px;
+    margin: 0 30px 10px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #999;
+    text-align: center;
+}
+h4{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #999;
+    margin-left: 11%;
+    margin-right: 11%;
+    font-weight: normal;
+}
+.top a{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #999;
+    text-decoration: none;
+}
+button{
+    color: #fff;
+    border: 1px solid #3897f0;
+    border-radius: 5px;
+    width: 85%;
+    padding: 2% 0;
+    background-color: #3897f0;
+}
+#btn{
+    margin-top: 5%;
+}
+#img1{
+    width: 15px;
+    height: 15px;
+
+}
+table tr td{
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 30px 10px;
+    line-height: 20px;
+    color: #999;
+}
+input{
+    width: 80%;
+    margin-top: 2%;
+    font-size: 11px;
+    background-color: #fafafa;
+    padding: 9px 0 7px 8px;
+    color: rgba(var(--i1d,38,38,38),1);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height: 18px;
+    border: 1px #e6e6e6 solid;
+}
