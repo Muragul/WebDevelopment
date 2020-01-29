@@ -1,12 +1,10 @@
 body{
-    padding-top: 3%;
-    padding-left: 16%;
-    padding-right: 20%;
     font-family: sans-serif;
 }
 .container{
     display: flex;
     flex-direction: row;
+    margin: 3% 20% 3% 16%;
 }
 .left{
     width: 60%;
@@ -15,6 +13,7 @@ body{
     background-size: cover;
 }
 .right{
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -23,11 +22,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
     padding: 20px 10px;
     border: 1px #e6e6e6 solid;
     border-radius: 4px;
     align-content: center;
+}
+#bottom{
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px #e6e6e6 solid;
+    border-radius: 4px;
+    font-size: 14px;
+}
+#bottom a{
+    color: #3897f0;
+    text-decoration: none;
 }
 .top #img0{
     margin-left: 20%;
@@ -49,6 +59,12 @@ h4{
     margin-left: 11%;
     margin-right: 11%;
     font-weight: normal;
+}
+.end{
+    margin-top: 1%;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
 }
 .top a{
     font-weight: bold;
@@ -72,7 +88,9 @@ button{
 #img1{
     width: 15px;
     height: 15px;
-
+}
+table{
+    width: 100%;
 }
 table tr td{
     text-align: center;
@@ -92,4 +110,25 @@ input{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     line-height: 18px;
     border: 1px #e6e6e6 solid;
+}
+#adv{
+    text-align: center;
+    font-size: 14px;
+}
+#adv div{
+    margin-top: 7%;
+}
+#adv img{
+    width: 130px;
+    height: 40px;
+}
+footer{
+    padding: 4% 9%;
+    font-size: 12px;
+    font-weight: bold;
+}
+footer div a{
+    margin-right: 1%;
+    color: rgba(var(--fe0,0,53,105),1);
+    text-decoration: none;
 }
