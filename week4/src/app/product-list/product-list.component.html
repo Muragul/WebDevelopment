@@ -1,0 +1,47 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <img src="{{product.image}}" width="250px" height="250px">
+        </td>
+        <td style="width: 5%;">
+        </td>
+        <td  style="width: 100%;">
+          <h3>
+            <a [title]="product.name + ' details'" href="{{product.link}}">
+              {{ product.name }}
+            </a>
+          </h3>
+          <p *ngIf="product.description">
+            Description: {{ product.description }}
+          </p>
+          
+          <h4>
+            Rating: {{product.rate}}
+          </h4>
+        
+          <div class="gal">
+            <div>
+              <a href="https://telegram.me/share/url?url=<URL>&text=<{{product.link}}>">
+                <button>
+                  Share
+                </button>
+              </a>
+            </div>
+            <div>
+              <img class="gallery zoom" src="{{product.img1}}" width="100px" height="100px">
+              <img class="gallery zoom" src="{{product.img2}}" width="100px" height="100px">
+              <img class="gallery zoom" src="{{product.img3}}" width="100px" height="100px">
+            </div>
+          </div>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
