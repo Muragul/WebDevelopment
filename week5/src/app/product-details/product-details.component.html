@@ -1,0 +1,46 @@
+<div *ngIf="product">
+  <div class="top-menu">
+    <div>
+      <button [routerLink]="['/categories']">
+        Back
+      </button>
+    </div>
+    <div>
+      <h3>
+        <a [title]="product.name + ' details'" href={{product.link}}>
+          {{ product.name }}
+        </a>
+      </h3>
+    </div>
+  </div>
+  <div class="about">
+    <div>
+      <p *ngIf="product.image">
+        <img src={{product.image}} style="width: 90%;">
+      </p>
+    </div>
+    <div class="info">
+      <div>
+        <p *ngIf="product.description">
+          Description: <br>
+          {{ product.description }}
+        </p>
+        <strong> 
+         <p *ngIf="product.rate">
+            Rating: {{ product.rate }}
+          </p>
+        </strong>
+        <a href="https://telegram.me/share/url?url=<URL>&text=<{{product.link}}>">
+          <button>
+            Share
+          </button>
+        </a>
+      </div>
+      <div>
+        <img class="zoom" src="{{product.img1}}">
+        <img class="zoom" src="{{product.img2}}">
+        <img class="zoom" src="{{product.img3}}">
+      </div>
+    </div>
+  </div>  
+</div>

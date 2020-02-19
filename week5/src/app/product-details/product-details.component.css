@@ -1,0 +1,49 @@
+.zoom {
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(2.5);
+}
+.top-menu{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top-menu div h3{
+    font-size: 30px;
+}
+.top-menu button{
+    padding: 20% 30%;
+    margin: 70%;
+}
+button{
+    color: #8B4726;
+    font-size: 15px;
+    margin: 2% 0;
+    padding: 1.5% 3%;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(248, 234, 207), #FFF8DC);
+    border-color: rgb(206, 168, 140);
+    border-style: solid;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+}
+.info {
+    width: 60%;
+    padding: 0 2% 10% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info img{
+    margin-right: 3%;
+    width: 20%;
+}
+p {
+    font-size: 20px;
+    color: #8B4726;
+
+}
