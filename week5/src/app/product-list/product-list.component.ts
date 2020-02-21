@@ -5,10 +5,6 @@ import { Category } from '../category';
 import { ActivatedRoute } from '@angular/router';
 import { CategoriesService } from '../categories.service';
 import { Location } from '@angular/common';
-import { Jewerly } from '../jewerly';
-import { Cosmetics } from '../cosmetics';
-import { Smartphones } from '../smartphones';
-import { Bags } from '../bags';
 
 @Component({
   selector: 'app-product-list',
@@ -33,22 +29,9 @@ export class ProductListComponent {
 
   getCategory(): void {
     let id = this.route.snapshot.paramMap.get("categoryId");
-    switch (id){
-      case ":1":
-        this.products = Cosmetics;
-        break;
-      case ":2":
-        this.products = Smartphones;
-        break;
-      case ":3":
-        this.products = Jewerly;
-        break;
-      case ":4":
-        this.products = Bags;
-        break;
-    }
-    this.categoriesService.getCategory(id)
+    this.categoriesService.getCategory(id.substring(1, id.length))
       .subscribe(category => this.category = category);
+    this.products = this.category.products;
   }
   
   goBack(): void {

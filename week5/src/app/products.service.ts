@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { CategoriesService} from './categories.service';
 import { Category } from './category';
 import { Product } from './product';
 import { Observable, of} from 'rxjs';
@@ -16,7 +15,7 @@ export class ProductsService {
     return of(this.products);
   }
   
-  getProduct(id: string): Observable<Product> {
-    return of(this.products.find(product => product.id = id));
+  getProduct(id: string, c: Category): Observable<Product> {
+    return of(c.products.find(product => product.id == id));
   }
 }
