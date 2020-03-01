@@ -1,0 +1,15 @@
+<h1 style="margin-left: 2%;">
+  Muragul Muratbekova, 18BD111191
+  (G3)
+</h1>
+<div>
+  <ul class="list">
+    <li *ngFor = "let job of jobs">
+      <div routerLink="/jobs/{{job.id}}">
+        <a>
+          {{job.title}}
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
