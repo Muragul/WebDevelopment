@@ -17,4 +17,8 @@ export class MainListComponent implements OnInit {
   ngOnInit() {
   }
 
+  show(){
+    document.getElementById("modal1").classList.toggle("modal2");
+  }
+
 }

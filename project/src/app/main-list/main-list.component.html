@@ -5,7 +5,7 @@
         <h2>
           {{title}}
         </h2>
-        <button type="button">Save</button>
+        <button type="button" (click)="show()">Save</button>
       </div>
       <hr>
       <img src={{front_image}}>
@@ -27,3 +27,38 @@
     </div>
   </div>
 </body>
+
+<div id="modal1" class="modal1">
+  <div class="card">
+    <div class="card-body">
+      <div class="title">
+        <h2>
+          {{title}}
+        </h2>
+        <button type="button" (click)="show()">Back</button>
+      </div>
+      <hr>
+      <img src={{front_image}}>
+      <div class="rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </div>
+      <div class="section">
+        rating: {{likes}}
+      </div>
+      <div class="section">
+        <strong>Description:</strong> {{description}}
+      </div>
+      <div class="section">
+        <strong>Ingredients:</strong> {{ingredients}}
+      </div>
+      <div class="section">
+        <strong>Directions:</strong>
+        <br>Step1.
+        <br>Step2.
+      </div>
+      <div class="section">
+        Comments: {{comments}}
+      </div>
+    </div>
+  </div>
+
