@@ -1,0 +1,76 @@
+body{
+    height: 100vh;
+    background-color: #EBECF0;
+}
+
+body, input, button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #BABECC;
+    text-shadow: 1px 1px 1px white;
+}
+
+form {
+    padding: 16px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.segment {
+    padding: 32px 0;
+    text-align: center;
+}
+
+button, input {
+    border: 0;
+    outline: 0;
+    border-radius: 320px;
+    padding: 16px;
+    background-color: #EBECF0;
+    text-shadow: 1px 1px 0 white;
+}
+
+label {
+    width: 100%;
+}
+
+input {
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px white;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus{
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+}
+
+button {
+    color:#61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px white,  5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    box-shadow: -2px -2px 5px white, 2px 2px 5px #BABECC;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+}
+
+button.red {
+    color: #AE1100;
+}
+
+button.new {
+    margin-top: 100px;
+}
