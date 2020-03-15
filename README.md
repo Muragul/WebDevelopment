@@ -17,3 +17,9 @@ Angular. Web-site from Aliexpress products. 4 categories, 40 products.
 
 Week6.
 Angular documentation. Tour of heroes. HTTP.
+
+Week7.
+Midterm.
+
+Week 8.
+Python. Django.
