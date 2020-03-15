@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-list.component.css']
 })
 export class MainListComponent implements OnInit {
-  currentRate = 8;
+  likes = 8;
   description = 'some text';
+  title='Title';
   ingredients = 'some ingredients';
+  comments = 3;
+  front_image = '../../assets/post17.png';
   constructor() { }
 
   ngOnInit() {
