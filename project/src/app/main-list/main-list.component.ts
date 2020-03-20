@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { List } from '../list';
+import { Recipe } from '../recipe';
 
 @Component({
   selector: 'app-main-list',
@@ -6,18 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-list.component.css']
 })
 export class MainListComponent implements OnInit {
-  likes = 8;
-  description = 'some text';
-  title='Title';
-  ingredients = 'some ingredients';
-  comments = 3;
-  front_image = '../../assets/post17.png';
+  list = List
+  selectedItem: Recipe;
   constructor() { }
 
   ngOnInit() {
   }
 
-  show(){
+  show(recipe: Recipe){
+    this.selectedItem = recipe;
     document.getElementById("modal1").classList.toggle("modal2");
   }
 

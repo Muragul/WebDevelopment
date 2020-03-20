@@ -1,64 +1,65 @@
-<body>
+<body *ngFor='let item of list'>
   <div class="card">
     <div class="card-body">
       <div class="title">
         <h2>
-          {{title}}
+          {{item.title}}
         </h2>
-        <button type="button" (click)="show()">Save</button>
+        <button type="button" (click)="show(item)">Save</button>
       </div>
       <hr>
-      <img src={{front_image}}>
+      <img src={{item.front_image}} alt={{item.title}}>
       <div class="rating">
         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
       </div>
       <div class="section">
-        rating: {{likes}}
+        rating: {{item.likes}}
       </div>
       <div class="section">
-        <strong>Description:</strong> {{description}}
+        <strong>Description:</strong> {{item.description}}
       </div>
       <div class="section">
-        <strong>Ingredients:</strong> {{ingredients}}
+        <strong>Ingredients:</strong> {{item.ingredients}}
       </div>
       <div class="section">
-        Comments: {{comments}}
+        Comments: {{item.comments}}
       </div>
     </div>
   </div>
 </body>
 
-<div id="modal1" class="modal1">
+
+<div id="modal1" class="modal1" *ngIf="selectedItem">
   <div class="card">
     <div class="card-body">
       <div class="title">
         <h2>
-          {{title}}
+          {{selectedItem.title}}
         </h2>
-        <button type="button" (click)="show()">Back</button>
+        <button type="button" (click)="show(selectedItem)">Back</button>
       </div>
       <hr>
-      <img src={{front_image}}>
+      <img src={{selectedItem.front_image}}>
       <div class="rating">
         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
       </div>
       <div class="section">
-        rating: {{likes}}
+        rating: {{selectedItem.likes}}
       </div>
       <div class="section">
-        <strong>Description:</strong> {{description}}
+        <strong>Description:</strong> {{selectedItem.description}}
       </div>
       <div class="section">
-        <strong>Ingredients:</strong> {{ingredients}}
+        <strong>Ingredients:</strong> {{selectedItem.ingredients}}
       </div>
       <div class="section">
         <strong>Directions:</strong>
-        <br>Step1.
-        <br>Step2.
+        <div *ngFor='let step of selectedItem.steps, let i = index'>
+          <br>Step{{i}}. {{step}}
+        </div>
       </div>
       <div class="section">
-        Comments: {{comments}}
+        Comments: {{selectedItem.comments}}
       </div>
     </div>
   </div>
-
