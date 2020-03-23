@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 25%;
+}
+.center{
+    width: 50%;
+}

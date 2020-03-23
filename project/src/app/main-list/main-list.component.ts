@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { List } from '../list';
 import { Recipe } from '../recipe';
+import { RECIPES } from '../mock-recipes';
 
 @Component({
   selector: 'app-main-list',
@@ -18,6 +19,10 @@ export class MainListComponent implements OnInit {
   show(recipe: Recipe){
     this.selectedItem = recipe;
     document.getElementById("modal1").classList.toggle("modal2");
+  }
+
+  save(){
+    alert("saved");
   }
 
 }

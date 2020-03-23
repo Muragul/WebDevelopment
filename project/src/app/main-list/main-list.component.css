@@ -5,10 +5,9 @@ img {
 .modal1{
     visibility: hidden;
     position: absolute;
-    top: 3%;
-    height: 40%;
     width: 50%;
     left: 25%;
+    top: 3%;
 }
 .modal2 {
     visibility: visible;

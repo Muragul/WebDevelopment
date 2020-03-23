@@ -1,11 +1,11 @@
-<body *ngFor='let item of list'>
+<body *ngFor='let item of list' (click)="show(item)">
   <div class="card">
     <div class="card-body">
       <div class="title">
         <h2>
           {{item.title}}
         </h2>
-        <button type="button" (click)="show(item)">Save</button>
+        <button type="button" (click)="save()">Save</button>
       </div>
       <hr>
       <img src={{item.front_image}} alt={{item.title}}>

@@ -7,6 +7,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { MainListComponent } from './main-list/main-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { BestRecipesComponent } from './best-recipes/best-recipes.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
    declarations: [
@@ -14,7 +17,10 @@ import { NavbarComponent } from './navbar/navbar.component';
       SignUpComponent,
       LogInComponent,
       MainListComponent,
-      NavbarComponent
+      NavbarComponent,
+      CategoriesComponent,
+      BestRecipesComponent,
+      MainPageComponent
    ],
    imports: [
       BrowserModule,
