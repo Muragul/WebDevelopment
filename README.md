@@ -23,3 +23,6 @@ Midterm.
 
 Week 8.
 Python. Django.
+
+Week 9.
+Django. API.
