@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb81e9c2-f38d-4195-93d1-299cc7856aa8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../week9/ShopBack/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../week9/ShopBack/.idea/ShopBack.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../week9/ShopBack/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../week9/ShopBack/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../week9/ShopBack/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../week9/ShopBack/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/WebDevelopment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/WebDevelopment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1ZaQTWSTU5C7MPGI7WlBcviAnYe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../week9/ShopBack" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb81e9c2-f38d-4195-93d1-299cc7856aa8" name="Default Changelist" comment="" />
+      <created>1585074732815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585074732815</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1585078761196">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585078761196" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1585076742341">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1585076742341" />
+  </component>
+</project>
