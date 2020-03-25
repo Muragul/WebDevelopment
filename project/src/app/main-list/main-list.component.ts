@@ -10,19 +10,14 @@ import { RECIPES } from '../mock-recipes';
 })
 export class MainListComponent implements OnInit {
   list = RECIPES;
-  selectedItem: Recipe;
   constructor() { }
 
   ngOnInit() {
   }
 
-  show(recipe: Recipe){
-    this.selectedItem = recipe;
-    document.getElementById("modal1").classList.toggle("modal2");
-  }
 
-  save(){
-    alert("saved");
+  save() {
+    alert('saved');
   }
 
 }

@@ -1,9 +1,3 @@
-.categories {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .categories-header {
     display: flex;
     border: 0;

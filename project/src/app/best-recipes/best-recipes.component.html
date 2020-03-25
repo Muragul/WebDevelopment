@@ -1,11 +1,19 @@
-<div class="best">
+<div>
   <div class="best-header">
       <p class="best-header-text">Best recipes</p>
   </div>
-  <div class="best-list">
+  <div>
       <ul class="best-ul">
-          <li *ngFor = "let recipe of recipes">
-              <a>{{recipe.title}}</a>
+          <li *ngFor = "let recipe of recipes" class="best-list" routerLink="/details">
+            <div class="card-body">
+              <h2>
+                {{recipe.title}}
+              </h2>
+              <img src={{recipe.front_image}} alt={{recipe.title}}>
+              <div>
+                rating: {{recipe.likes}}
+              </div>
+            </div>
           </li>
       </ul>
   </div>

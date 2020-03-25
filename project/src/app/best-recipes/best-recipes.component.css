@@ -1,9 +1,3 @@
-.best {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .best-header {
     display: flex;
     border: 0;
@@ -30,27 +24,31 @@
     flex-direction: column;
     border: 0;
     outline: 0;
-    font-size: 20px;
     border-radius: 50px;
-    padding: 5%;
-    margin: 2% 10%;
+    padding: 0 2%;
+    margin: 2% 5%;
     background-color: #EBECF0;
     text-shadow: 1px 1px 0 #FFF;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -0.2px;
-    color: rgb(97,103,124,0.5);
     box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
 }
-
+h2{
+  font-size: 20px;
+}
 .best-ul {
     padding-inline-start: 0;
     list-style-type: none;
 }
-a:hover{
-    text-decoration: underline;
-}
 
 li {
-    margin: 2% 5%;
     color: rgb(97,103,124);
+}
+
+.card{
+  background-color: #EBECF0;
+}
+
+img{
+  width: 100%;
 }

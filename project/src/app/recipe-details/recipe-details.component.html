@@ -1,0 +1,34 @@
+<div *ngIf="selectedItem">
+  <div class="card">
+    <div class="card-body">
+      <div class="title">
+        <h2>
+          {{selectedItem.title}}
+        </h2>
+        <button type="button">Back</button>
+      </div>
+      <hr>
+      <img src={{selectedItem.front_image}}>
+      <div class="section">
+        rating: {{selectedItem.likes}}
+      </div>
+      <div class="section">
+        <strong>Description:</strong> {{selectedItem.description}}
+      </div>
+      <div class="section">
+        <strong>Ingredients:</strong> {{selectedItem.ingredients}}
+      </div>
+      <div class="section">
+        <strong>Directions:</strong>
+        <div *ngFor='let step of selectedItem.steps, let i = index'>
+          <br>Step{{i}}. {{step}}
+        </div>
+      </div>
+      <div class="section">
+        Comments:
+        <div *ngFor='let step of selectedItem.comments, let i = index'>
+          <br>- {{step}}
+        </div>
+      </div>
+    </div>
+  </div>

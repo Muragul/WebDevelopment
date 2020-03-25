@@ -1,7 +1,7 @@
-import { Category } from './category'
-import { Comment } from './comment'
-import { Recipe } from './recipe'
-import { User } from './user'
+import { Category } from './category';
+import { Comment } from './comment';
+import { Recipe } from './recipe';
+import { User } from './user';
 
 export const List = [
     {
@@ -22,7 +22,7 @@ export const List = [
             'buy cupcake'
         ],
         likes: 8,
-        comment: [
+        comments: [
             'lol',
             'kek',
             'norm'

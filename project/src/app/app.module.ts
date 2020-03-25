@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { BestRecipesComponent } from './best-recipes/best-recipes.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 
 @NgModule({
    declarations: [
@@ -20,7 +21,8 @@ import { MainPageComponent } from './main-page/main-page.component';
       NavbarComponent,
       CategoriesComponent,
       BestRecipesComponent,
-      MainPageComponent
+      MainPageComponent,
+      RecipeDetailsComponent
    ],
    imports: [
       BrowserModule,

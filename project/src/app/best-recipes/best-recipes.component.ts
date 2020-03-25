@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RECIPES } from '../mock-recipes'
+import { RECIPES } from '../mock-recipes';
+import { List } from '../list';
 
 @Component({
   selector: 'app-best-recipes',
@@ -8,7 +9,7 @@ import { RECIPES } from '../mock-recipes'
 })
 export class BestRecipesComponent implements OnInit {
 
-  recipes = RECIPES;
+  recipes = List;
 
   constructor() { }
 
