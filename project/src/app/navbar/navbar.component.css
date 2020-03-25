@@ -1,7 +1,10 @@
 .container{
     display: flex;
+    padding: 1% 0;
 }
-
+nav{
+    background-color: #EBECF0;
+}
 .nav-title{
     margin-left: 1%;
     font-size: 50px;

@@ -9,7 +9,7 @@ import { RECIPES } from '../mock-recipes';
   styleUrls: ['./main-list.component.css']
 })
 export class MainListComponent implements OnInit {
-  list = List
+  list = RECIPES;
   selectedItem: Recipe;
   constructor() { }
 
