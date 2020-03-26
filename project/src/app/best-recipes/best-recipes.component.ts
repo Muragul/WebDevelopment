@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RECIPES } from '../mock-recipes';
 import { List } from '../list';
 
 @Component({
@@ -9,7 +8,11 @@ import { List } from '../list';
 })
 export class BestRecipesComponent implements OnInit {
 
-  recipes = RECIPES;
+  recipes = [
+    List[5],
+    List[7],
+    List[13]
+  ];
 
   constructor() { }
 

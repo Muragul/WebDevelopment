@@ -28,7 +28,6 @@ import { RecipeDetailsComponent } from './recipe-details/recipe-details.componen
       BrowserModule,
       AppRoutingModule
    ],
-   providers: [],
    bootstrap: [
       AppComponent
    ]

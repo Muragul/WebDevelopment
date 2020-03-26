@@ -8,14 +8,17 @@ import {Observable, of} from 'rxjs';
 })
 export class RecipeService {
   list: Recipe[];
-
-  constructor() { }
-
-  chooseList(id: number): Recipe[] {
+  constructor() {
+    this.chooseList(1);
+  }
+  getRecipes(id: number): Observable<Recipe[]> {
     this.list = List.filter(
       recipe => recipe.category.id === id
     );
-    return this.list;
+    return of (this.list);
+  }
+  chooseList(id: number): void {
+    this.getRecipes(id).subscribe(list => this.list = list);
   }
 
 }
