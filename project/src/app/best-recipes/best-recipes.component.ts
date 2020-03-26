@@ -9,7 +9,7 @@ import { List } from '../list';
 })
 export class BestRecipesComponent implements OnInit {
 
-  recipes = List;
+  recipes = RECIPES;
 
   constructor() { }
 

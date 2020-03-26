@@ -4,14 +4,14 @@
   </div>
   <div>
       <ul class="best-ul">
-          <li *ngFor = "let recipe of recipes" class="best-list" routerLink="/details">
+          <li *ngFor = "let recipe of recipes" class="best-list" routerLink="/recipe/:{{recipe.id}}/details">
             <div class="card-body">
               <h2>
                 {{recipe.title}}
               </h2>
               <img src={{recipe.front_image}} alt={{recipe.title}}>
               <div>
-                rating: {{recipe.likes}}
+                Rating: {{recipe.likes}}
               </div>
             </div>
           </li>

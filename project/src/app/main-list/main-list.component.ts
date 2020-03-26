@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { List } from '../list';
-import { Recipe } from '../recipe';
-import { RECIPES } from '../mock-recipes';
+import {List} from '../list';
+import {RecipeService} from '../recipe.service';
+import {Recipe} from '../recipe';
 
 @Component({
   selector: 'app-main-list',
@@ -9,12 +9,14 @@ import { RECIPES } from '../mock-recipes';
   styleUrls: ['./main-list.component.css']
 })
 export class MainListComponent implements OnInit {
-  list = RECIPES;
-  constructor() { }
+  list: Recipe[];
+  constructor(
+    private recipeService: RecipeService
+  ) { }
 
   ngOnInit() {
+    this.list = this.recipeService.chooseList(1);
   }
-
 
   save() {
     alert('saved');

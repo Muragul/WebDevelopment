@@ -1,6 +1,12 @@
-img {
-  margin: 0 10%;
-  width: 50%;
+.box{
+  display: flex;
+  flex-direction: row;
+}
+.left-part{
+  width: 40%;
+}
+.right-part{
+  width: 70%;
 }
 .title {
   display: flex;
@@ -10,6 +16,7 @@ img {
 
 .section {
   font-size: 14px;
+  margin-top: 1%;
 }
 
 body {
@@ -40,6 +47,7 @@ form {
 }
 
 button {
+  margin-right: 5px;
   font-size: 16px;
   border: 0;
   outline: 0;

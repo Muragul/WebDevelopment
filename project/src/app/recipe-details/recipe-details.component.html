@@ -1,34 +1,50 @@
 <div *ngIf="selectedItem">
   <div class="card">
     <div class="card-body">
+      {{selectedItem.category.name}}
       <div class="title">
         <h2>
           {{selectedItem.title}}
         </h2>
-        <button type="button">Back</button>
-      </div>
-      <hr>
-      <img src={{selectedItem.front_image}}>
-      <div class="section">
-        rating: {{selectedItem.likes}}
-      </div>
-      <div class="section">
-        <strong>Description:</strong> {{selectedItem.description}}
-      </div>
-      <div class="section">
-        <strong>Ingredients:</strong> {{selectedItem.ingredients}}
-      </div>
-      <div class="section">
-        <strong>Directions:</strong>
-        <div *ngFor='let step of selectedItem.steps, let i = index'>
-          <br>Step{{i}}. {{step}}
+        <div>
+          <button type="button" (click)="save()">Save</button>
+          <button type="button" (click)="back()">Back</button>
         </div>
       </div>
-      <div class="section">
-        Comments:
-        <div *ngFor='let step of selectedItem.comments, let i = index'>
-          <br>- {{step}}
+      <hr>
+      <div class="box">
+        <div class="left-part">
+          <img src={{selectedItem.front_image}} style="width: 90%">
+          <div *ngFor='let photo of selectedItem.images'>
+            <img src={{photo}} style="width: 90%; margin-top: 5%">
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="section">
+            Rating: {{selectedItem.likes}}
+          </div>
+          <div class="section">
+            <strong>Description:</strong> {{selectedItem.description}}
+          </div>
+          <div class="section">
+            <strong>Ingredients:</strong> {{selectedItem.ingredients}}
+          </div>
+          <div class="section">
+            <strong>Directions:</strong>
+            <div *ngFor='let step of selectedItem.steps, let i = index'>
+              Step {{i+1}}.
+              <br>
+              {{step}}
+            </div>
+          </div>
+          <div class="section">
+            Comments:
+            <div *ngFor='let step of selectedItem.comments, let i = index'>
+              - {{step}}
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>

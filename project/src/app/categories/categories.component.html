@@ -5,7 +5,9 @@
   <div class="categories-list">
       <ul class="categories-ul">
           <li *ngFor = "let category of categories">
-              <a>{{category.name}}</a>
+              <a (click)="function(category.id)">
+                {{category.name}}
+              </a>
           </li>
       </ul>
   </div>

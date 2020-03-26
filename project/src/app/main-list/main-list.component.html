@@ -1,11 +1,13 @@
-<body *ngFor='let item of list' routerLink="/details">
+<body *ngFor='let item of list' routerLink="/recipe/:{{item.id}}/details">
   <div class="card">
     <div class="card-body">
       <div class="title">
         <h2>
           {{item.title}}
         </h2>
-        <button type="button" (click)="save()">Save</button>
+        <div>
+          <button type="button">More</button>
+        </div>
       </div>
       <hr>
       <img src={{item.front_image}} alt={{item.title}}>
@@ -13,17 +15,18 @@
         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
       </div>
       <div class="section">
-        rating: {{item.likes}}
+        Rating: {{item.likes}}
       </div>
       <div class="section">
         <strong>Description:</strong> {{item.description}}
       </div>
-      <div class="section">
+<!--      <div class="section">
         <strong>Ingredients:</strong> {{item.ingredients}}
       </div>
       <div class="section">
         Comments: {{item.comments}}
       </div>
+      -->
     </div>
   </div>
 </body>
