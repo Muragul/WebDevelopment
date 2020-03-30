@@ -1,36 +1,48 @@
-.container{
+.container1{
     display: flex;
-    padding: 1% 0;
+  flex-direction: row;
+  padding: 1% 5%;
+    justify-content: space-between;
+}
+.logo{
+  width: 28%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
 }
 nav{
     background-color: #EBECF0;
 }
 .nav-title{
-    margin-left: 1%;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Bellota', cursive;
     color: #FF9999;
 }
+img{
+  width: 20%;
+}
 
 @media screen and (max-width: 995px){
-    .nav-title{
-        font-size: 30px;
+    .container1{
+      flex-direction: column;
+      justify-content: center;
     }
-    .container{
-        margin: 0 5%!important;
-    }
+  .logo{
+    width: 60%;
+    align-self: center;
+  }
+  .search-bar{
+    align-self: center;
+  }
+  .btn-group{
+    align-self: center;
+  }
 }
 
 .search-bar{
     width: 30%;
-    align-self: center;
-    margin-left: 10%;
-}
-
-img{
-    width: 80%;
-    margin: 15% 0;
+  margin-top: 2%;
 }
 
 
@@ -49,8 +61,8 @@ button, input {
 }
 
 input {
-    color: rgb(97,103,124,0.5);
-    margin-right: 16px/2;
+    color: rgb(97,103,124, 0.5);
+    margin-right: 8px;
     box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
     width: 100%;
     box-sizing: border-box;
@@ -58,14 +70,14 @@ input {
     appearance: none;
     -webkit-appearance: none;
 }
-  
+
 input:focus {
     box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
 }
 
 label {
     display: block;
-    margin-bottom: 16px*1.5;
+    margin-bottom: 32px;
     width: 100%;
 }
 
@@ -102,13 +114,11 @@ button:active {
     justify-content: flex-start;
 
 }
-
 label {
     margin: 0;
     flex: 1;
 }
-
 .btn-group{
-    margin: auto;
-    display: flex;
+  margin-top: 2%;
 }
+
