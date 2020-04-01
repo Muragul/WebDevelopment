@@ -26,3 +26,7 @@ Python. Django.
 
 Week 9.
 Django. API.
+
+Week 11.
+Django. API. Postman. 
+HeadHunter lab.
