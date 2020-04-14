@@ -30,3 +30,9 @@ Django. API.
 Week 11.
 Django. API. Postman. 
 HeadHunter lab.
+
+Week 13.
+Django. FBV. CBV. DRF.
+Serialization. Authentication. Authorization.
+Angular. Interceptor.
+HeadHunter lab. Frontend. Backend.
